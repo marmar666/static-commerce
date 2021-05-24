@@ -1,18 +1,4 @@
-# Static Commerce
 
-Commerce Layer is an API-first platform that lets you transform any plain HTML page into an enterprise-grade e-commerce website, with almost **no coding required**. All you need is to tag HTML pages following some conventions (i.e. class names and SKU codes) and embed Commerce Layer's [official JS library](https://github.com/commercelayer/commercelayer-js-dropin). Prices, availability messages, and shopping bag functionalities are automatically mixed into your own content and styling, whatever the CMS, SSG and tools you use to build your site pages.
-
-## 1. Get Your API Credentials
-
-Create a [free developer account](https://core.commercelayer.io/users/sign_up) on Commerce Layer and &mdash; when prompted &mdash; seed it with test data. Navigate to _Settings_ → _Applications_ and take note of the API credentials for your _sales channel_ application (client ID, base endpoint, allowed scopes).
-
-![Credentials](docs/sales_channel.png?raw=true 'Credentials')
-
-## 2. Configuration
-
-Add an element with `clayer-config` ID and populate its data attributes with your credentials and page preferences. Then add a script link to import the Commerce Layer's JS library right before the closing body tag:
-
-```
 <!DOCTYPE html>
 <html>
   <head></head>
